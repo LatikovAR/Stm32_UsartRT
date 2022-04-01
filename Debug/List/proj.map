@@ -1,0 +1,221 @@
+###############################################################################
+#
+# IAR ELF Linker V9.20.2.320/W64 for ARM                  01/Apr/2022  10:11:37
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =  D:\stm32proj\4\Debug\Exe\proj.out
+#    Map file     =  D:\stm32proj\4\Debug\List\proj.map
+#    Command line =
+#        -f D:\stm32proj\4\Debug\Exe\proj.out.rsp
+#        (D:\stm32proj\4\Debug\Obj\SRC\DS18B20.o
+#        D:\stm32proj\4\Debug\Obj\main.o
+#        D:\stm32proj\4\Debug\Obj\API\StartUp\startup_stm32f051x8.o
+#        D:\stm32proj\4\Debug\Obj\API\Core\system_stm32f0xx.o
+#        --no_out_extension -o D:\stm32proj\4\Debug\Exe\proj.out --map
+#        D:\stm32proj\4\Debug\List\proj.map --config
+#        D:\IAR\arm\config\linker\ST\stm32f051x8.icf --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'1fff] {
+          rw, block CSTACK, block HEAP };
+
+No sections matched the following patterns:
+
+  rw  in "P2"
+
+
+  Section   Kind         Address   Size  Object
+  -------   ----         -------   ----  ------
+"A0":                              0xbc
+  .intvec   ro code   0x800'0000   0xbc  startup_stm32f051x8.o [3]
+                    - 0x800'00bc   0xbc
+
+"P1":                             0x328
+  .text     ro code   0x800'00bc  0x170  main.o [1]
+  .text     ro code   0x800'022c   0x6e  main.o [1]
+  .text     ro code   0x800'029a   0x14  DS18B20.o [4]
+  .text     ro code   0x800'02ae    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'02b0   0x80  system_stm32f0xx.o [2]
+  .text     ro code   0x800'0330   0x1e  cmain.o [6]
+  .text     ro code   0x800'034e    0x4  low_level_init.o [5]
+  .text     ro code   0x800'0352    0x8  exit.o [5]
+  .text     ro code   0x800'035a    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'035c    0xa  cexit.o [6]
+  .text     ro code   0x800'0366    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'0368   0x14  exit.o [7]
+  .text     ro code   0x800'037c   0x1c  cstartup_M.o [6]
+  .text     ro code   0x800'0398   0x10  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03a8    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03aa    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03ac    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03ae    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03b0    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03b2    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03b4    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03b6    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03b8    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03ba    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03bc    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03be    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03c0    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03c2    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03c4    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03c6    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03c8    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03ca    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03cc    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03ce    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03d0    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03d2    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03d4    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03d6    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03d8    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03da    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03dc    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03de    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03e0    0x2  startup_stm32f051x8.o [3]
+  .text     ro code   0x800'03e2    0x2  startup_stm32f051x8.o [3]
+                    - 0x800'03e4  0x328
+
+"P2":                             0x800
+  CSTACK             0x2000'0000  0x800  <Block>
+    CSTACK  uninit   0x2000'0000  0x800  <Block tail>
+                   - 0x2000'0800  0x800
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'03e4   0x800'ffff  0xfc1c
+  0x2000'0800  0x2000'1fff  0x1800
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  rw data
+    ------                 -------  -------
+command line/config:
+    ---------------------------------------
+    Total:
+
+D:\stm32proj\4\Debug\Obj: [1]
+    main.o                     478
+    ---------------------------------------
+    Total:                     478
+
+D:\stm32proj\4\Debug\Obj\API\Core: [2]
+    system_stm32f0xx.o         128
+    ---------------------------------------
+    Total:                     128
+
+D:\stm32proj\4\Debug\Obj\API\StartUp: [3]
+    startup_stm32f051x8.o      270
+    ---------------------------------------
+    Total:                     270
+
+D:\stm32proj\4\Debug\Obj\SRC: [4]
+    DS18B20.o                   20
+    ---------------------------------------
+    Total:                      20
+
+dl6M_tln.a: [5]
+    exit.o                       8
+    low_level_init.o             4
+    ---------------------------------------
+    Total:                      12
+
+rt6M_tl.a: [6]
+    cexit.o                     10
+    cmain.o                     30
+    cstartup_M.o                28
+    ---------------------------------------
+    Total:                      68
+
+shb_l.a: [7]
+    exit.o                      20
+    ---------------------------------------
+    Total:                      20
+
+    Linker created                    2'048
+-------------------------------------------
+    Grand Total:               996    2'048
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+?main                    0x800'0331        Code  Gb  cmain.o [6]
+CSTACK$$Base            0x2000'0000         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0800         --   Gb  - Linker created -
+NVIC_EnableIRQ           0x800'00bd   0xe  Code  Lc  main.o [1]
+POSITION_VAL             0x800'029b  0x14  Code  Wk  DS18B20.o [4]
+RCCInit                  0x800'011f  0x46  Code  Gb  main.o [1]
+Region$$Table$$Base             0x0         --   Gb  - Linker created -
+Region$$Table$$Limit            0x0         --   Gb  - Linker created -
+SystemInit               0x800'02b1  0x52  Code  Gb  system_stm32f0xx.o [2]
+TIM2InterruptionInit     0x800'0165  0x44  Code  Gb  main.o [1]
+TIM2_IRQHandler          0x800'00cb   0x8  Code  Gb  main.o [1]
+USARTInit                0x800'00d3  0x4c  Code  Gb  main.o [1]
+__ICFEDIT_region_RAM_end__ {Abs}
+                        0x2000'1fff        Data  Gb  <internal module>
+__ICFEDIT_region_RAM_start__ {Abs}
+                        0x2000'0000        Data  Gb  <internal module>
+__cmain                  0x800'0331        Code  Gb  cmain.o [6]
+__exit                   0x800'0369  0x14  Code  Gb  exit.o [7]
+__iar_program_start      0x800'037d        Code  Gb  cstartup_M.o [6]
+__low_level_init         0x800'034f   0x4  Code  Gb  low_level_init.o [5]
+__vector_table           0x800'0000        Data  Gb  startup_stm32f051x8.o [3]
+_call_main               0x800'033d        Code  Gb  cmain.o [6]
+_exit                    0x800'035d        Code  Gb  cexit.o [6]
+exit                     0x800'0353   0x8  Code  Gb  exit.o [5]
+main                     0x800'01a9  0x32  Code  Gb  main.o [1]
+
+
+[1] = D:\stm32proj\4\Debug\Obj
+[2] = D:\stm32proj\4\Debug\Obj\API\Core
+[3] = D:\stm32proj\4\Debug\Obj\API\StartUp
+[4] = D:\stm32proj\4\Debug\Obj\SRC
+[5] = dl6M_tln.a
+[6] = rt6M_tl.a
+[7] = shb_l.a
+
+    996 bytes of readonly  code memory
+  2'048 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

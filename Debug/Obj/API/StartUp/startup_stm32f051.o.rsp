@@ -1,0 +1,1 @@
+﻿D:\stm32proj\3\API\Startup\startup_stm32f051.s -OD:\stm32proj\3\Debug\Obj\API\StartUp -s+ -M<> -w+ -r --cpu Cortex-M0 --fpu None

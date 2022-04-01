@@ -1,0 +1,14 @@
+D:\stm32proj\4\Debug\BrowseInfo\main.pbi: D:\IAR\arm\inc\c\ycheck.h \
+  D:\IAR\arm\inc\c\ysizet.h D:\IAR\arm\inc\c\stdio.h \
+  D:\stm32proj\4\Inc\DS18B20.h D:\stm32proj\4\Inc\NVIC.h \
+  D:\stm32proj\4\Inc\GPIO.h D:\stm32proj\4\API\Core\system_stm32f0xx.h \
+  D:\stm32proj\4\API\Core\core_cmFunc.h \
+  D:\IAR\arm\inc\c\aarch32\iccarm_builtin.h \
+  D:\IAR\arm\inc\c\aarch32\cmsis_iar.h \
+  D:\stm32proj\4\API\Core\core_cmInstr.h D:\IAR\arm\inc\c\DLib_Product.h \
+  D:\IAR\arm\inc\c\DLib_Config_Normal.h D:\IAR\arm\inc\c\DLib_Defaults.h \
+  D:\IAR\arm\inc\c\yvals.h D:\IAR\arm\inc\c\stdint.h \
+  D:\stm32proj\4\API\Core\core_cm0.h \
+  D:\stm32proj\4\API\Core\stm32f051x8.h \
+  D:\stm32proj\4\API\Core\stm32f0xx.h D:\stm32proj\4\Inc\F05_RCC.h \
+  D:\stm32proj\4\main.c

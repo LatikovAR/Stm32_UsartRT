@@ -1,0 +1,12 @@
+D:\stm32proj\4\Debug\BrowseInfo\API\Core\system_stm32f0xx.pbi: \
+  D:\stm32proj\4\API\Core\system_stm32f0xx.c \
+  D:\stm32proj\4\API\Core\stm32f0xx.h \
+  D:\stm32proj\4\API\Core\stm32f051x8.h \
+  D:\stm32proj\4\API\Core\core_cm0.h D:\IAR\arm\inc\c\stdint.h \
+  D:\IAR\arm\inc\c\ycheck.h D:\IAR\arm\inc\c\yvals.h \
+  D:\IAR\arm\inc\c\DLib_Defaults.h D:\IAR\arm\inc\c\DLib_Config_Normal.h \
+  D:\IAR\arm\inc\c\DLib_Product.h D:\stm32proj\4\API\Core\core_cmInstr.h \
+  D:\IAR\arm\inc\c\aarch32\cmsis_iar.h \
+  D:\IAR\arm\inc\c\aarch32\iccarm_builtin.h \
+  D:\stm32proj\4\API\Core\core_cmFunc.h \
+  D:\stm32proj\4\API\Core\system_stm32f0xx.h
