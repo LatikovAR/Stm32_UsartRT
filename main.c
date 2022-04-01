@@ -7,6 +7,7 @@
 
 void TIM2_IRQHandler() {
   USART1->TDR = 0x5;
+  TIM2->SR &= ~TIM_SR_UIF;
 }
 
 void USARTInit(uint32_t PPin, uint32_t BaudRate) {
